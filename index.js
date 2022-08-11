@@ -10,5 +10,5 @@ app.get('/', (req, res) => {
 })
 app.use(router)
 router.use(clientService)
-const PORT = process.env.PORT || 4000;
-app.listen(PORT);
+const PORT = 4000;
+app.listen(PORT,()=>console.log("api gw !"));
